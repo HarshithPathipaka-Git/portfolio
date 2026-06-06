@@ -79,15 +79,15 @@ const Contact = () => {
               </p>
 
               <div className={styles.contacts}>
-                <a href="mailto:harshith@email.com" className={styles.contactItem}>
+                <a href="mailto:harshithkumarpathipaka@email.com" className={styles.contactItem}>
                   <span className={styles.contactIcon}><RiMailLine size={18} /></span>
                   <div>
                     <span className={styles.contactLabel}>Email</span>
-                    <span className={styles.contactValue}>harshith@email.com</span>
+                    <span className={styles.contactValue}>harshithkumarpathipaka@email.com</span>
                   </div>
                 </a>
                 <a
-                  href="https://github.com/harshith"
+                  href="https://github.com/HarshithPathipaka-Git"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.contactItem}
@@ -95,11 +95,11 @@ const Contact = () => {
                   <span className={styles.contactIcon}><RiGithubLine size={18} /></span>
                   <div>
                     <span className={styles.contactLabel}>GitHub</span>
-                    <span className={styles.contactValue}>github.com/harshith</span>
+                    <span className={styles.contactValue}>github.com/HarshithPathipaka-Git</span>
                   </div>
                 </a>
                 <a
-                  href="https://linkedin.com/in/harshith"
+                  href="https://linkedin.com/in/harshithpathipaka"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.contactItem}
@@ -107,7 +107,7 @@ const Contact = () => {
                   <span className={styles.contactIcon}><RiLinkedinBoxLine size={18} /></span>
                   <div>
                     <span className={styles.contactLabel}>LinkedIn</span>
-                    <span className={styles.contactValue}>linkedin.com/in/harshith</span>
+                    <span className={styles.contactValue}>linkedin.com/in/harshithpathipaka</span>
                   </div>
                 </a>
               </div>
@@ -128,7 +128,7 @@ const Contact = () => {
                   id="name"
                   name="name"
                   type="text"
-                  placeholder="Your name"
+                  placeholder="Praveen"
                   value={form.name}
                   onChange={handleChange}
                   className={`${styles.input} ${errors.name ? styles.inputError : ''}`}
@@ -141,7 +141,7 @@ const Contact = () => {
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="your@email.com"
+                  placeholder="Praveen@email.com"
                   value={form.email}
                   onChange={handleChange}
                   className={`${styles.input} ${errors.email ? styles.inputError : ''}`}

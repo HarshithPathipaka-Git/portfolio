@@ -65,7 +65,7 @@ const Hero = () => {
           </div>
 
           <h1 className={`${styles.name} animate-fade-up delay-100`}>
-            Hi, I'm <span className={styles.accent}>Harshith</span>
+            Hi, I'm <span className={styles.accent}>Harshith Pathipaka</span>
           </h1>
 
           <div className={`${styles.roleRow} animate-fade-up delay-200`}>
@@ -102,13 +102,13 @@ const Hero = () => {
           </div>
 
           <div className={`${styles.socials} animate-fade-up delay-500`}>
-            <a href="https://github.com/harshith" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="GitHub">
+            <a href="https://github.com/HarshithPathipaka-Git" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="GitHub">
               <RiGithubLine size={20} />
             </a>
-            <a href="https://linkedin.com/in/harshith" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="LinkedIn">
+            <a href="https://linkedin.com/in/harshithpathipaka" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="LinkedIn">
               <RiLinkedinBoxLine size={20} />
             </a>
-            <a href="mailto:harshith@email.com" className={styles.socialLink} aria-label="Email">
+            <a href="mailto:harshithkumarpathipaka@gmail.com" className={styles.socialLink} aria-label="Email">
               <RiMailLine size={20} />
             </a>
           </div>

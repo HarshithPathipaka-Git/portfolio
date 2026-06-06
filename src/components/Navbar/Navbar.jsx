@@ -67,7 +67,7 @@ const Navbar = ({ theme, toggleTheme }) => {
           className={styles.logo}
           onClick={(e) => { e.preventDefault(); handleNavClick('#home'); }}
         >
-          <span className={styles.logoH}>H</span>arshith
+          <span className={styles.logoH}>H</span>arshith <span className={styles.logoH}>P</span>athipaka
         </a>
 
         <nav className={`${styles.links} ${menuOpen ? styles.linksOpen : ''}`}>

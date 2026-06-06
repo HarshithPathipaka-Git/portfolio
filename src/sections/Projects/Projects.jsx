@@ -23,7 +23,7 @@ const Projects = () => {
         <div className={styles.cta}>
           <p>More projects are on their way as I continue to learn and build.</p>
           <a
-            href="https://github.com/harshith"
+            href="https://github.com/HarshithPathipaka-Git"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-outline"

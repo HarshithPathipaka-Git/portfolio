@@ -11,9 +11,9 @@ const quickLinks = [
 ];
 
 const socials = [
-  { icon: <RiGithubLine size={18} />, href: 'https://github.com/harshith', label: 'GitHub' },
-  { icon: <RiLinkedinBoxLine size={18} />, href: 'https://linkedin.com/in/harshith', label: 'LinkedIn' },
-  { icon: <RiMailLine size={18} />, href: 'mailto:harshith@email.com', label: 'Email' },
+  { icon: <RiGithubLine size={18} />, href: 'https://github.com/HarshithPathipaka-Git', label: 'GitHub' },
+  { icon: <RiLinkedinBoxLine size={18} />, href: 'https://linkedin.com/in/harshithpathipaka', label: 'LinkedIn' },
+  { icon: <RiMailLine size={18} />, href: 'mailto:harshithkumarpathipaka@gmail.com', label: 'Email' },
 ];
 
 const Footer = () => {
@@ -29,7 +29,7 @@ const Footer = () => {
       <div className={`container ${styles.grid}`}>
         <div className={styles.brand}>
           <span className={styles.logo}>
-            <span className={styles.logoAccent}>H</span>arshith
+            <span className={styles.logoAccent}>H</span>arshith <span className={styles.logoAccent}>P</span>athipaka
           </span>
           <p className={styles.tagline}>
             B.Tech CS Student · Full Stack Developer Learner · Building one project at a time.
@@ -72,21 +72,26 @@ const Footer = () => {
           <p className={styles.contactText}>
             Open to internship opportunities, collaborations, and learning experiences.
           </p>
-          <a href="mailto:harshith@email.com" className={styles.emailBtn}>
+          <a href="mailto:harshithkumarpathipaka@gmail.com" className={styles.emailBtn}>
             <RiMailLine size={15} />
-            harshith@email.com
+            harshithkumarpathipaka@gmail.com
           </a>
         </div>
       </div>
 
       <div className={styles.bottom}>
         <div className="container">
-          <p className={styles.copy}>
-            © 2026 Harshith. All Rights Reserved.{' '}
-            <span className={styles.heart}>
-              Made with <RiHeartFill size={12} /> in India
+
+           <p className={styles.copy}>
+           <span className={styles.heart}>
+              Made with <RiHeartFill size={12} /> by Harshith Pathipaka
             </span>
           </p>
+          <p className={styles.copy}>
+            © 2026 All Rights Reserved.{' '}
+            
+          </p>
+          
         </div>
       </div>
     </footer>

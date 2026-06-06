@@ -4,10 +4,10 @@ export const skillCategories = [
     label: 'Frontend',
     icon: '🎨',
     skills: [
-      { name: 'HTML5', level: 85, icon: 'html' },
-      { name: 'CSS3', level: 80, icon: 'css' },
-      { name: 'JavaScript', level: 75, icon: 'js' },
-      { name: 'React', level: 70, icon: 'react' },
+      { name: 'HTML5', level: 55, icon: 'html' },
+      { name: 'CSS3', level: 60, icon: 'css' },
+      { name: 'JavaScript', level: 33, icon: 'js',tag: 'Learning' },
+      { name: 'React', level: 40, icon: 'react',tag: 'Learning' },
     ],
   },
   {
@@ -24,10 +24,10 @@ export const skillCategories = [
     label: 'Tools',
     icon: '🛠️',
     skills: [
-      { name: 'Git', level: 75, icon: 'git' },
+      { name: 'Git', level: 75, icon: 'git',tag: 'Basics ' },
       { name: 'GitHub', level: 78, icon: 'github' },
       { name: 'VS Code', level: 90, icon: 'vscode' },
-      { name: 'Vercel', level: 65, icon: 'vercel' },
+      { name: 'Vercel', level: 65, icon: 'vercel' , tag : 'Learning'},
     ],
   },
   {
