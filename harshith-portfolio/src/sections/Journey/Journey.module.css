@@ -1,0 +1,33 @@
+.journey {
+  background: var(--bg-secondary);
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.line {
+  position: absolute;
+  left: 50%;
+  top: 28px;
+  bottom: 28px;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--accent), var(--accent), transparent);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .line {
+    left: 12px;
+    transform: none;
+  }
+}

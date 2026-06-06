@@ -1,0 +1,138 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.item.left {
+  flex-direction: row;
+}
+
+.item.right {
+  flex-direction: row-reverse;
+}
+
+.content {
+  flex: 1;
+  max-width: calc(50% - 48px);
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: all var(--transition);
+}
+
+.content:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.left .content {
+  margin-right: auto;
+  text-align: right;
+}
+
+.right .content {
+  margin-left: auto;
+  text-align: left;
+}
+
+.year {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-subtle);
+  border: 1px solid var(--accent);
+  padding: 2px 10px;
+  border-radius: var(--radius-full);
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.currentBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #22c55e;
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.dot {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 2.5px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 2;
+  box-shadow: 0 0 0 6px var(--accent-subtle), var(--shadow-md);
+  transition: all var(--transition);
+}
+
+.item:hover .dot {
+  background: var(--accent);
+  box-shadow: 0 0 0 6px var(--accent-subtle), var(--shadow-lg);
+}
+
+.icon {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  .item,
+  .item.left,
+  .item.right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-left: 28px;
+  }
+
+  .content {
+    max-width: 100%;
+    width: 100%;
+    text-align: left !important;
+  }
+
+  .left .content,
+  .right .content {
+    margin: 0;
+  }
+
+  .dot {
+    position: absolute;
+    left: -12px;
+    top: 0;
+    width: 44px;
+    height: 44px;
+  }
+}

@@ -1,0 +1,96 @@
+import { RiGithubLine, RiLinkedinBoxLine, RiMailLine, RiHeartFill } from 'react-icons/ri';
+import styles from './Footer.module.css';
+
+const quickLinks = [
+  { label: 'Home', href: '#home' },
+  { label: 'About', href: '#about' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Journey', href: '#journey' },
+  { label: 'Contact', href: '#contact' },
+];
+
+const socials = [
+  { icon: <RiGithubLine size={18} />, href: 'https://github.com/harshith', label: 'GitHub' },
+  { icon: <RiLinkedinBoxLine size={18} />, href: 'https://linkedin.com/in/harshith', label: 'LinkedIn' },
+  { icon: <RiMailLine size={18} />, href: 'mailto:harshith@email.com', label: 'Email' },
+];
+
+const Footer = () => {
+  const handleNav = (e, href) => {
+    e.preventDefault();
+    const id = href.slice(1);
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  return (
+    <footer className={styles.footer}>
+      <div className={`container ${styles.grid}`}>
+        <div className={styles.brand}>
+          <span className={styles.logo}>
+            <span className={styles.logoAccent}>H</span>arshith
+          </span>
+          <p className={styles.tagline}>
+            B.Tech CS Student · Full Stack Developer Learner · Building one project at a time.
+          </p>
+          <div className={styles.socials}>
+            {socials.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={s.label}
+                className={styles.social}
+              >
+                {s.icon}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div className={styles.links}>
+          <h4 className={styles.colTitle}>Quick Links</h4>
+          <ul>
+            {quickLinks.map((l) => (
+              <li key={l.label}>
+                <a
+                  href={l.href}
+                  className={styles.link}
+                  onClick={(e) => handleNav(e, l.href)}
+                >
+                  {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className={styles.contact}>
+          <h4 className={styles.colTitle}>Get In Touch</h4>
+          <p className={styles.contactText}>
+            Open to internship opportunities, collaborations, and learning experiences.
+          </p>
+          <a href="mailto:harshith@email.com" className={styles.emailBtn}>
+            <RiMailLine size={15} />
+            harshith@email.com
+          </a>
+        </div>
+      </div>
+
+      <div className={styles.bottom}>
+        <div className="container">
+          <p className={styles.copy}>
+            © 2026 Harshith. All Rights Reserved.{' '}
+            <span className={styles.heart}>
+              Made with <RiHeartFill size={12} /> in India
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

@@ -1,0 +1,149 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: var(--nav-height);
+  background: transparent;
+  transition: all var(--transition-slow);
+}
+
+.header.scrolled {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(12px);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--nav-height);
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  transition: color var(--transition);
+}
+
+.logo:hover {
+  color: var(--accent);
+}
+
+.logoH {
+  color: var(--accent);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.link {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  transition: all var(--transition);
+  position: relative;
+}
+
+.link:hover {
+  color: var(--accent);
+  background: var(--accent-subtle);
+}
+
+.link.active {
+  color: var(--accent);
+  background: var(--accent-subtle);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hamburger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background: var(--bg-accent);
+  border: 1.5px solid var(--border);
+  color: var(--text-primary);
+  transition: all var(--transition);
+}
+
+.hamburger:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.mobileTheme {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .actions .toggle-wrapper,
+  .actions > :not(.hamburger) {
+    /* show theme toggle via the mobileTheme div inside the menu */
+  }
+
+  /* hide the desktop theme toggle on mobile - managed inside menu */
+  .actions > div:first-child {
+    display: none;
+  }
+
+  .mobileTheme {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    margin-top: 8px;
+  }
+
+  .links {
+    display: none;
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px 24px;
+    gap: 4px;
+    box-shadow: var(--shadow-lg);
+    z-index: 999;
+  }
+
+  .links.linksOpen {
+    display: flex;
+  }
+
+  .link {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+}

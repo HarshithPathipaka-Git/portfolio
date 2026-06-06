@@ -1,0 +1,65 @@
+:root {
+  /* Light Theme */
+  --bg-primary: #f8f7f4;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-accent: #f0ede6;
+
+  --text-primary: #1a1814;
+  --text-secondary: #4a4540;
+  --text-muted: #8a837a;
+
+  --accent: #c8602a;
+  --accent-light: #e07a44;
+  --accent-dark: #a04820;
+  --accent-subtle: #f5ebe3;
+
+  --border: #e2ddd6;
+  --border-strong: #c8c0b4;
+
+  --shadow-sm: 0 1px 3px rgba(26, 24, 20, 0.06);
+  --shadow-md: 0 4px 16px rgba(26, 24, 20, 0.08);
+  --shadow-lg: 0 8px 32px rgba(26, 24, 20, 0.12);
+  --shadow-xl: 0 16px 48px rgba(26, 24, 20, 0.16);
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --max-width: 1200px;
+  --section-padding: 100px 0;
+  --nav-height: 72px;
+}
+
+[data-theme='dark'] {
+  --bg-primary: #161412;
+  --bg-secondary: #1e1b18;
+  --bg-card: #242018;
+  --bg-accent: #2a2520;
+
+  --text-primary: #f0ece4;
+  --text-secondary: #c8c0b0;
+  --text-muted: #7a7268;
+
+  --accent: #e07a44;
+  --accent-light: #f0946a;
+  --accent-dark: #c8602a;
+  --accent-subtle: #2e1f12;
+
+  --border: #2e2820;
+  --border-strong: #3a3228;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+}
