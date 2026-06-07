@@ -7,30 +7,30 @@ const cards = [
     icon: <RiGraduationCapLine size={24} />,
     title: 'Education',
     content:
-      'Currently pursuing B.Tech in Computer Science Engineering. Focused on core CS fundamentals, data structures, algorithms, and modern software development practices.',
+      'Currently pursuing a B.Tech in Computer Science and Engineering at SR University, Warangal, Telangana. Building a strong foundation in programming, web development, and problem-solving while exploring modern technologies.',
     highlight: 'B.Tech CSE',
   },
   {
     icon: <RiBriefcaseLine size={24} />,
     title: 'Career Objective',
     content:
-      'Aiming to land a Full Stack Developer internship where I can apply my skills, grow professionally, and contribute to meaningful products while learning from experienced engineers.',
-    highlight: 'Seeking Internship',
+      'Aspiring Full Stack Developer focused on building practical projects, improving technical skills, and gaining real-world development experience through continuous learning and hands-on work.',
+    highlight: 'Future Developer',
   },
   {
     icon: <RiRocketLine size={24} />,
     title: 'Learning Journey',
     content:
-      'Started with Python, moved to web development with HTML, CSS, and JavaScript, and now building projects with React. Every day brings new knowledge and challenges.',
-    highlight: 'Always Growing',
+      'Began with Python and gradually expanded into HTML, CSS, JavaScript, React, Git, and modern web development tools. I enjoy turning ideas into projects and learning through building.',
+    highlight: 'Continuous Learning',
   },
 ];
 
 const stats = [
   { number: '3+', label: 'Projects Built' },
-  { number: '4+', label: 'Technologies' },
-  { number: '2+', label: 'Years Coding' },
-  { number: '∞', label: 'Curiosity' },
+  { number: '5+', label: 'Technologies Learned' },
+  { number: '1st', label: 'Year B.Tech' },
+  { number: '∞', label: 'Motivation' },
 ];
 
 const About = () => {
