@@ -13,7 +13,7 @@ const quickLinks = [
 const socials = [
   { icon: <RiGithubLine size={18} />, href: 'https://github.com/HarshithPathipaka-Git', label: 'GitHub' },
   { icon: <RiLinkedinBoxLine size={18} />, href: 'https://linkedin.com/in/harshithpathipaka', label: 'LinkedIn' },
-  { icon: <RiMailLine size={18} />, href: 'mailto:harshithkumarpathipaka@gmail.com', label: 'Email' },
+  { icon: <RiMailLine size={18} />, href: 'mailto:harshithpathipaka.dev@gmail.com', label: 'Email' },
 ];
 
 const Footer = () => {
@@ -72,9 +72,9 @@ const Footer = () => {
           <p className={styles.contactText}>
             Open to internship opportunities, collaborations, and learning experiences.
           </p>
-          <a href="mailto:harshithkumarpathipaka@gmail.com" className={styles.emailBtn}>
+          <a href="mailto:harshithpathipaka.dev@gmail.com" className={styles.emailBtn}>
             <RiMailLine size={15} />
-            harshithkumarpathipaka@gmail.com
+            harshithpathipaka.dev@gmail.com
           </a>
         </div>
       </div>

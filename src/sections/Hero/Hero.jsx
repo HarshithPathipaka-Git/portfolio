@@ -108,7 +108,7 @@ const Hero = () => {
             <a href="https://linkedin.com/in/harshithpathipaka" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="LinkedIn">
               <RiLinkedinBoxLine size={20} />
             </a>
-            <a href="mailto:harshithkumarpathipaka@gmail.com" className={styles.socialLink} aria-label="Email">
+            <a href="mailto:harshithpathipaka.dev@gmail.com" className={styles.socialLink} aria-label="Email">
               <RiMailLine size={20} />
             </a>
           </div>

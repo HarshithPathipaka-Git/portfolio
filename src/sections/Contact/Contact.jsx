@@ -79,11 +79,11 @@ const Contact = () => {
               </p>
 
               <div className={styles.contacts}>
-                <a href="mailto:harshithkumarpathipaka@email.com" className={styles.contactItem}>
+                <a href="mailto:harshithpathipaka.dev@gmail.com" className={styles.contactItem}>
                   <span className={styles.contactIcon}><RiMailLine size={18} /></span>
                   <div>
                     <span className={styles.contactLabel}>Email</span>
-                    <span className={styles.contactValue}>harshithkumarpathipaka@email.com</span>
+                    <span className={styles.contactValue}>harshithpathipaka.dev@gmail.com</span>
                   </div>
                 </a>
                 <a
